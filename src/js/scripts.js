@@ -1,6 +1,6 @@
 async function main() {
-  let cost_of_goods = await input("Please enter the total cost of goods: $");
-  let cash_payment = await input("Please enter the amount of cash payment by the customer: $");
+  let cost_of_goods = Number(await input("Please enter the total cost of goods: $")); // Type casting to Number just to be double sure
+  let cash_payment = Number(await input("Please enter the amount of cash payment by the customer: $"));
   let discount_code = Number(await input("Please enter the discount code: "));
   
   let discount = 0;
