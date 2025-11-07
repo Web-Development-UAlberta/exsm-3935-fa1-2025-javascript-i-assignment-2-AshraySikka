@@ -39,13 +39,16 @@ async function main() {
   if (error == "yes"){
     output("Error! Invalid Discount code.");
   }
-  else if (balance == 0){
+  else {
+   if (balance == 0){
     output("Balance is $"+balance+", no change to be returned!");
-  }
-  else if (balance < 0){
+   }
+   else if (balance < 0){
     output("Insufficient Payment! Customer needs to pay $"+Math.abs(balance)+" more."); // using absolute function to remove the negative sign
-  }
-  else{
+   }
+   else{
     output("Successful Payment! Please give $"+balance+" back to the customer.");
+   }
   }
+
 }
