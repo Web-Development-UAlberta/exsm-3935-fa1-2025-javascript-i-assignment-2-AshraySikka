@@ -1,4 +1,4 @@
-# Name Editor and Remainder Calculator
+# Discount Based Billing and Change Calculator
 This JavaScript prgram interacts with the user through the browser console using the `input()` and `output()` functions.  
 It takes the total cost of goods, the customer's cash payment, and a discount code as input, applies the discount, and calculates the remaining balance or change to be returned.
 
